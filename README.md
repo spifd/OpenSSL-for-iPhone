@@ -1,6 +1,6 @@
-# OpenSSL-for-iOS [![Build Status](https://travis-ci.org/x2on/OpenSSL-for-iPhone.png)](https://travis-ci.org/x2on/OpenSSL-for-iPhone)
+# OpenSSL-for-iOS [![Build Status](https://travis-ci.org/x2on/OpenSSL-for-iPhone.svg)](https://travis-ci.org/x2on/OpenSSL-for-iPhone) [![license](https://img.shields.io/github/license/x2on/OpenSSL-for-iPhone.svg)](https://github.com/x2on/OpenSSL-for-iPhone/blob/master/LICENSE) [![OpenSSL version](https://img.shields.io/badge/OpenSSL-1.0.2i-lightgrey.svg)]() [![iOS support](https://img.shields.io/badge/iOS-7.0%20--%2010.0-lightgrey.svg)]() [![tvOS support](https://img.shields.io/badge/tvOS-9.2--%2010.0-lightgrey.svg)]()
 
-This is a script for using self-compiled builds of the OpenSSL-library on the iPhone. You can build apps with XCode and the official SDK from Apple with this. I also made a small example-app for using the libraries with XCode and the iPhone/iPhone-Simulator.
+This is a script for using self-compiled builds of the OpenSSL-library on the iPhone. You can build apps with Xcode and the official SDK from Apple with this. I also made a small example-app for using the libraries with Xcode and the iPhone/iPhone-Simulator.
 
 **Enjoy OpenSSL on the iPhone!**
 
@@ -9,20 +9,32 @@ You must build the OpenSSL-Libraries before running the sample with:
 ./build-libssl.sh
 ```
 
-This repository contains a iOS 9.1 XCode Project with usese the OpenSSL Libaries. The examples uses the MD5 or SHA256-algorithm to calculate an md5 or sha256 hash from an UITextfield.
+For all options see the help
+```bash
+./build-libssl.sh --help
+```
+
+This repository contains an iOS 10.0 Xcode Project which uses the OpenSSL Libraries. The examples uses the MD5 or SHA256-algorithm to calculate an md5 or sha256 hash from an UITextfield.
 
 ## System support
-**iOS 7.0 - iOS 9.1 (i386, x86_64, armv7, armv7s, armv64, bitcode) is currently supported.**
+**iOS 7.0 - iOS 10.0 (i386, x86_64, armv7, armv7s, armv64, bitcode) and tvOS 9.2 - tvOS 10.0 (x86_64, arm64, bitcode) are currently supported.**
 
 For iOS < 7.0 you must use Xcode < 7 and an older version of the build script.
 
-If you have problems building for arm64 please uninstall MacPorts (see #28).
+If you have problems building for arm64 please uninstall MacPorts (see [#28](https://github.com/x2on/OpenSSL-for-iPhone/issues/28)).
 
 ## Original tutorials for this project:
 * <http://www.x2on.de/2010/02/01/tutorial-iphone-app-with-compiled-openssl-library/>
 * <http://www.x2on.de/2010/07/13/tutorial-iphone-app-with-compiled-openssl-1-0-0a-library/>
 
 ## Changelog
+* 2016-09-28: OpenSSL 1.0.2j
+* 2016-09-22: OpenSSL 1.0.2i
+* 2016-09-18: Xcode 8 support, iOS 10.0, Add command line options, Optimize build
+* 2016-08-09: Xcode 7.3 support, iOS 9.3
+* 2016-05-04: OpenSSL 1.0.2h
+* 2015-12-11: Xcode 7.2 support, iOS 9.2
+* 2015-12-03: OpenSSL 1.0.2e
 * 2015-11-17: tvOS example app, Migrate to Swift for example app
 * 2015-11-16: tvOS support
 * 2015-10-25: Xcode 7.1 support
